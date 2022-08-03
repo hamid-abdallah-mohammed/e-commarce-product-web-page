@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>E-commerce product page | Challenge | Frontendmentor.io</title>
+</head>
+
+<body>
+
+    <div class="container-A">
+        <header>
+            <!-- header product group start-->
+            <div class="product-header">
+                <div class="header-product-group">
+                    <div class="menu hidden"><img src="/images/icon-menu.svg" alt="menu"></div>
+                    <div class="logo"><img src="/images/logo.svg" alt=" sneakers logo"></div>
+                    <nav class="nav  test">
+                        <div class="slide-menu">
+                            <img src="/images/icon-close.svg" alt="" class="closeMenu">
+                            <ul>
+                                <li><a href="#">Collections</a></li>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- header product group end-->
+
+
+
+                <!-- user avatar group start -->
+                <div class="user-avatar-group">
+                    <div class="user-cart">
+                        <img src="/images/icon-cart.svg" alt="">
+                        <div class="counter-carts">0</div>
+                    </div>
+                    <div class="avatar">
+                        <img src="/images/image-avatar.png" alt="">
+                    </div>
+                </div>
+                <!-- user avatar group end -->
+
+
+            </div>
+            <!-- cart start-->
+            <div class="cart hidden">
+                <div class="cart-header">cart</div>
+                <div class="msg-empty">Your cart is empty</div>
+                <div class="cart-price-group">
+                    <img src="/images/image-product-1-thumbnail.jpg" alt="" class="cart-img-product">
+                    <div class="price-group">
+                        <p>Autumn Limited Edition</p>
+                        <p>
+                            <span class="currentPrice">$125.00</span> x <span class="counterValue">3</span> <span class="full-price">375.00</span>
+                        </p>
+                    </div>
+                    <img src="/images/icon-delete.svg" alt="icon delete" class="delete-price">
+                </div>
+                <div class="btn-cart">
+                    <button class="checkout">checkout</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Product start -->
+    <div class="container-B">
+        
+        <div class="products-show">
+
+            <div class="available-products">
+                <div class="desirable-product active">
+                    <img src="/images/image-product-1.jpg" alt="" class="firstShow">
+                </div>
+
+                   <div class="prev-next">
+                     <div class="previous arrow"><img src="/images/icon-previous.svg" alt="previous"></div>
+                     <div class="next arrow"><img src="/images/icon-next.svg" alt="next"></div>
+                   </div>
+                   
+                <div class="other-products">
+                    <div class="pick "><img src="/images/image-product-1-thumbnail.jpg" alt="1" class="nextShow active remove"></div>
+                    <div class="pick"><img src="/images/image-product-2-thumbnail.jpg" alt="2" class="nextShow"></div>
+                    <div class="pick"><img src="/images/image-product-3-thumbnail.jpg" alt="3" class="nextShow"></div>
+                    <div class="pick"><img src="/images/image-product-4-thumbnail.jpg" alt="4" class="nextShow"></div>
+                </div>
+            </div>
+             <!-- product show end -->
+
+             
+             <!-- products info and price start -->
+             <div class="info-price">
+                <div class="info">
+                    <div class="company-name">Sneakers Company</div>
+                    <div class="title"><h1>Fall Limited Edition Sneakers</h1></div>
+                    <div class="desc">
+                        <p>
+                            These low-profile sneakers are Your perfect casual wear companion 
+                            Featuring rubber outer sole, thy'll withstang  everything the
+                            weather can offer.
+                        </p>
+                    </div>
+
+                    
+                      <div class="new-old-price">
+                          <div class="price-group">
+                            <p>$125.00</p>
+                           <span>50$</span>
+                          </div>
+                         <p class="old-price">$250.00</p>
+                      </div>
+                      <div class="increase-decrease-amt">
+
+                         <div class="changing-amount">
+                            <div class="decrease"><img src="/images/icon-minus.svg" alt="decrease"></div>
+                            <div class="counter">0</div>
+                            <div class="increase"><img src="/images/icon-plus.svg" alt="increase"></div>
+                         </div>
+
+                          <div class="btn">
+                            <img src="/images/icon-cart.svg" alt="cart" class="btn-cart" style="color: white;">
+                            <p>Add to cart</p>
+                          </div>
+                      </div>
+                </div>
+             </div>
+            </div>
+    </div>
+       
+       <div class="overlay">
+        <div class="lightbox_close-icon"><svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd"/></svg></div>
+
+        <div class="available-products">
+            <div class="desirable-product active">
+                <img src="/images/image-product-1.jpg" alt="" class="firstLightBoxShow">
+            </div>
+
+               <div class="p-n">
+                 <div class="prevLightBox arrow"><img src="/images/icon-previous.svg" alt="previous"></div>
+                 <div class="nexLightBox arrow"><img src="/images/icon-next.svg" alt="next"></div>
+               </div>
+               
+            <div class="other-products">
+                <div class="pickLightBox active"><img src="/images/image-product-1-thumbnail.jpg" alt="1" class="nextShow active remove"></div>
+                <div class="pickLightBox"><img src="/images/image-product-2-thumbnail.jpg" alt="2" class="nextShow"></div>
+                <div class="pickLightBox"><img src="/images/image-product-3-thumbnail.jpg" alt="3" class="nextShow"></div>
+                <div class="pickLightBox"><img src="/images/image-product-4-thumbnail.jpg" alt="4" class="nextShow"></div>
+            </div>
+        </div>
+
+       </div>
+        
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

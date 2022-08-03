@@ -1,0 +1,90 @@
+.overlay{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 9999;
+    margin-top: 300px;
+    width: 100%;
+    height: 100%;
+    background: $black;
+    text-align: center;
+    margin: 0 auto;
+    .lightbox_close-icon{
+        position: absolute;
+        right: 38%;
+        top: 10%;
+        fill: $white;
+        &:hover{
+            transform: translateY(-3px);
+            -webkit-transform: translateY(-3px);
+            color: orange;
+        }
+    }  
+     .available-products{
+        margin: 10rem auto;
+        max-width: 500px;
+        .desirable-product{
+           position: relative;
+          img{
+              width: 70%;
+              object-fit: cover;
+              border-radius: 12px;
+          }
+      }
+
+
+         .p-n{
+            position: absolute;
+           
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            top: 45%;
+            width: 28%;
+            right: 49rem;
+            transform: translateY(-50%);
+            .arrow{
+                background-color: $white;
+                padding: 1rem;
+                border-radius: 2rem;
+                cursor: pointer;
+
+               img{
+                   &:hover{
+                    color: $orange;
+                   }
+               }
+            }
+         }
+       .other-products{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          width: 60%;
+          gap: .5rem;
+          margin-top: 1.5rem;
+       .pickLightBox{
+          cursor: pointer;
+          border-radius: 2rem; 
+          border: 2px solid transparent;
+          &:hover{
+            border: 2px solid $orange;
+          }
+         img{
+            width: 100%;
+            border-radius: 2rem;
+         }
+      }
+
+      .active{
+        opacity: .9;
+      }
+
+       }
+
+     }
+  }

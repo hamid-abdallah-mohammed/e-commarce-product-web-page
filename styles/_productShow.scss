@@ -1,0 +1,208 @@
+
+.container-B{
+   margin: 0 auto;
+   width: 100%;
+.products-show{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+    gap: 7.5rem;
+    .available-products{
+        width: 60%;
+        position: relative;
+        
+        .desirable-product{
+            width: 100%;
+            position: relative;
+             
+            img{
+                width: 100%;
+                border-radius: 1.4rem;
+            }
+        }
+
+           .prev-next{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            top: 50%;
+            width: 100%;
+             padding: 1rem;
+            
+            
+            .arrow{
+                background-color: $white;
+                cursor: pointer;
+                transition: all 0.3s ease; 
+                height: auto;   
+                border-radius: 50%;  
+                transform: translateY(-50%); 
+                padding: 1rem; 
+                position: relative;
+                display: none;
+             }
+                 
+               .previous{
+                  &:hover{
+                    right: 2%;
+                  }
+               }
+                
+               .next{
+                &:hover{
+                    left: 2%;
+                }
+               }
+
+
+              }
+
+              .other-products{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                position: absolute;
+               
+                .pick{
+                    width: 100%;
+                     margin: 1rem;
+                     cursor: pointer;
+                      transition: all .3s ease;
+                     &:hover{
+                        opacity: .5;
+                     }
+                    img{
+                        width: 100%;
+                        border-radius: 1rem;
+                    }
+                }
+                .active{
+                   opacity: .4;
+                }
+            }
+             
+           }
+
+       
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: .3rem;
+        max-width: 500px;
+        margin-top: 20px;
+        // margin-top: 40px;
+        // padding: 0 5rem;
+         
+        .company-name{
+            color: $orange;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: .3rem;
+        }
+
+        .title{
+          padding: 1rem 0;
+
+          h1{
+              color: $black;
+              font-size:3rem;
+          }
+        }
+
+        .desc{
+            p{
+                font-size: 1.2rem;
+                font-weight: 700;
+                line-height: 1.3rem;
+              color: $grayish-blue;
+                margin: 1rem 0;
+
+            }
+        }
+
+        .new-old-price{
+            margin: 2rem 0;
+
+            .price-group{
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.3rem;
+                  p{
+                    font-size: 3rem;
+                    color: $black;
+                  }
+                span{
+                    margin: 0 1.5rem;
+                    font-size: 1rem;
+                    color: $orange;
+                    background: $light-grayish-blue;
+                    padding: .6rem;
+                    border-radius: .7rem;
+                    font-weight: 700;
+                }
+            }
+
+            .old-price{
+                color: $grayish-blue;
+                text-decoration:line-through;
+                font-weight: 700;
+                font-size: 1.3rem;
+            }
+        }
+
+        .increase-decrease-amt{
+            display: flex;
+            align-items: center;
+           width: 90%;
+           justify-content: space-between;
+            .changing-amount{
+                display: flex;
+                align-items: center;
+                background: $light-grayish-blue;
+                 color: $white;
+                  width: 35%;
+                  justify-content: space-around;
+                  padding: 1.5rem ;
+                  border-radius: 1rem;
+                   img{
+                    cursor: pointer;
+                   }
+                  .counter{
+                    color: $black;
+                    font-size: 1.4rem;
+                  }
+            }
+
+            .btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                background-color: $orange;
+                cursor: pointer;
+                color: $white;
+                padding: 1.5rem 4rem;
+                width: 60%;
+                cursor: pointer;
+                border-radius: 1rem;
+                     
+                .btn-cart{
+                    color: $white;
+                }
+                  
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+
